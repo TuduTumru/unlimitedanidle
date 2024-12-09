@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlimited Anidle</title>
+    <link rel="icon" href="icon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="index.html" id="banner">Unlimited Anidle</a>
+    <main>
+        <table class="guessbox">
+            <thead>
+                <th>Anime Title</th>
+                <th>Score</th>
+                <th>Genres</th>
+                <th>Type</th>
+                <th>Episodes</th>
+                <th>Premiered</th>  <!-- season and year -->
+                <th>Studios</th>
+                <th>Source</th>
+                <th>Ranked</th>
+                <th>Popularity</th>
+            </thead>
+            <tbody>
+                <th class="animetitle"></th>
+                <th class="score"><span id="scoredown"></span><span id="scorehyphen"></span><span id="scoreup"></span></th>
+                <th class="genres"></th>
+                <th class="type"></th>
+                <th class="episodes"><span id="epdown"></span><span id="epup"></span></th>
+                <th class="aired"><span class="season"></span><span> </span><span class="year"></span></th>
+                <th class="studios"></th>
+                <th class="Source"></th>
+                <th class="ranked"></th>
+                <th class="popularity"><span id="popdown"></span><span id="popup"></span></th>
+            </tbody>
+        </table>
+        <div id="cluebox">
+            <div id="themes_synopsis">
+                <h2><button id="themesbutton"><i>Reveal Themes</i></button></h2>
+                <h4><button id="synopsisbutton"><i>Reveal Synopsis</i></button></h4>
+            </div>
+            <button id="imgbutton"><i>Reveal Image</i></button>
+            <img src="" alt="">
+        </div>
+        <h1 id="totalguesses"></h1>
+        <p id="hintin"></p>
+        <div id="searchbar_button">
+            <label for="search"></label>
+            <input type="search" id="search" placeholder="Search Anime..." autocomplete="off">
+            <button id="submitguess">Guess</button>
+        </div>
+        <h3 id="alertsign"></h3>
+        <div id="suggestions"></div>
+        <button id="restartbutton">Restart</button>
+        <table id="extratable">
+            <tbody>
+                <th class="animetitle"></th>
+                <th class="score"></th>
+                <th class="genres"></th>
+                <th class="type"></th>
+                <th class="episodes"></th>
+                <th class="aired"><span class="season"></span><span> </span><span class="year"></span></th>
+                <th class="studios"></th>
+                <th class="Source"></th>
+                <th class="ranked"></th>
+                <th class="popularity"></th>
+            </tbody>
+        </table>
+        <table class="guessbox">
+            <thead>
+                <th>Anime Title</th>
+                <th>Score</th>
+                <th>Genres</th>
+                <th>Type</th>
+                <th>Episodes</th>
+                <th>Premiered</th>
+                <th>Studios</th>
+                <th>Source</th>
+                <th>Ranked</th>
+                <th>Popularity</th>
+            </thead>
+            <tbody>
+                <th class="animetitle"></th>
+                <th class="score"></th>
+                <th class="genres"></th>
+                <th class="type"></th>
+                <th class="episodes"></th>
+                <th class="aired"><span class="season"></span><span> </span><span class="year"></span></th>
+                <th class="studios"></th>
+                <th class="Source"></th>
+                <th class="ranked"></th>
+                <th class="popularity"></th>
+            </tbody>
+        </table>
+        <table class="guessbox">
+            <thead>
+                <th>Anime Title</th>
+                <th>Score</th>
+                <th>Genres</th>
+                <th>Type</th>
+                <th>Episodes</th>
+                <th>Premiered</th>
+                <th>Studios</th>
+                <th>Source</th>
+                <th>Ranked</th>
+                <th>Popularity</th>
+            </thead>
+            <tbody>
+                <th class="animetitle"></th>
+                <th class="score"></th>
+                <th class="genres"></th>
+                <th class="type"></th>
+                <th class="episodes"></th>
+                <th class="aired"><span class="season"></span><span> </span><span class="year"></span></th>
+                <th class="studios"></th>
+                <th class="Source"></th>
+                <th class="ranked"></th>
+                <th class="popularity"></th>
+            </tbody>
+        </table>
+        <table class="guessbox">
+            <thead>
+                <th>Anime Title</th>
+                <th>Score</th>
+                <th>Genres</th>
+                <th>Type</th>
+                <th>Episodes</th>
+                <th>Premiered</th>
+                <th>Studios</th>
+                <th>Source</th>
+                <th>Ranked</th>
+                <th>Popularity</th>
+            </thead>
+            <tbody>
+                <th class="animetitle"></th>
+                <th class="score"></th>
+                <th class="genres"></th>
+                <th class="type"></th>
+                <th class="episodes"></th>
+                <th class="aired"><span class="season"></span><span> </span><span class="year"></span></th>
+                <th class="studios"></th>
+                <th class="Source"></th>
+                <th class="ranked"></th>
+                <th class="popularity"></th>
+            </tbody>
+        </table>
+        <table class="guessbox">
+            <thead>
+                <th>Anime Title</th>
+                <th>Score</th>
+                <th>Genres</th>
+                <th>Type</th>
+                <th>Episodes</th>
+                <th>Premiered</th>            
+                <th>Studios</th>
+                <th>Source</th>
+                <th>Ranked</th>
+                <th>Popularity</th>
+            </thead>
+            <tbody>
+                <th class="animetitle"></th>
+                <th class="score"></th>
+                <th class="genres"></th>
+                <th class="type"></th>
+                <th class="episodes"></th>
+                <th class="aired"><span class="season"></span><span> </span><span class="year"></span></th>
+                <th class="studios"></th>
+                <th class="Source"></th>
+                <th class="ranked"></th>
+                <th class="popularity"></th>
+            </tbody>
+        </table>
+        <table class="guessbox">
+            <thead>
+                <th>Anime Title</th>
+                <th>Score</th>
+                <th>Genres</th>
+                <th>Type</th>
+                <th>Episodes</th>
+                <th>Premiered</th>            
+                <th>Studios</th>
+                <th>Source</th>
+                <th>Ranked</th>
+                <th>Popularity</th>
+            </thead>
+            <tbody>
+                <th class="animetitle"></th>
+                <th class="score"></th>
+                <th class="genres"></th>
+                <th class="type"></th>
+                <th class="episodes"></th>
+                <th class="aired"><span class="season"></span><span> </span><span class="year"></span></th>
+                <th class="studios"></th>
+                <th class="Source"></th>
+                <th class="ranked"></th>
+                <th class="popularity"></th>
+            </tbody>
+        </table>
+        <table class="guessbox">
+            <thead>
+                <th>Anime Title</th>
+                <th>Score</th>
+                <th>Genres</th>
+                <th>Type</th>
+                <th>Episodes</th>
+                <th>Premiered</th>          
+                <th>Studios</th>
+                <th>Source</th>
+                <th>Ranked</th>
+                <th>Popularity</th>
+            </thead>
+            <tbody>
+                <th class="animetitle"></th>
+                <th class="score"></th>
+                <th class="genres"></th>
+                <th class="type"></th>
+                <th class="episodes"></th>
+                <th class="aired"><span class="season"></span><span> </span><span class="year"></span></th>
+                <th class="studios"></th>
+                <th class="Source"></th>
+                <th class="ranked"></th>
+                <th class="popularity"></th>
+            </tbody>
+        </table>
+        <table class="guessbox">
+            <thead>
+                <th>Anime Title</th>
+                <th>Score</th>
+                <th>Genres</th>
+                <th>Type</th>
+                <th>Episodes</th>
+                <th>Premiered</th>           
+                <th>Studios</th>
+                <th>Source</th>
+                <th>Ranked</th>
+                <th>Popularity</th>
+            </thead>
+            <tbody>
+                <th class="animetitle"></th>
+                <th class="score"></th>
+                <th class="genres"></th>
+                <th class="type"></th>
+                <th class="episodes"></th>
+                <th class="aired"><span class="season"></span><span> </span><span class="year"></span></th>
+                <th class="studios"></th>
+                <th class="Source"></th>
+                <th class="ranked"></th>
+                <th class="popularity"></th>
+            </tbody>
+        </table>
+        <table class="guessbox">
+            <thead>
+                <th>Anime Title</th>
+                <th>Score</th>
+                <th>Genres</th>
+                <th>Type</th>
+                <th>Episodes</th>
+                <th>Premiered</th>         
+                <th>Studios</th>
+                <th>Source</th>
+                <th>Ranked</th>
+                <th>Popularity</th>
+            </thead>
+            <tbody>
+                <th class="animetitle"></th>
+                <th class="score"></th>
+                <th class="genres"></th>
+                <th class="type"></th>
+                <th class="episodes"></th>
+                <th class="aired"><span class="season"></span><span> </span><span class="year"></span></th>
+                <th class="studios"></th>
+                <th class="Source"></th>
+                <th class="ranked"></th>
+                <th class="popularity"></th>
+            </tbody>
+        </table>
+        <table class="guessbox">
+            <thead>
+                <th>Anime Title</th>
+                <th>Score</th>
+                <th>Genres</th>
+                <th>Type</th>
+                <th>Episodes</th>
+                <th>Premiered</th>    
+                <th>Studios</th>
+                <th>Source</th>
+                <th>Ranked</th>
+                <th>Popularity</th>
+            </thead>
+            <tbody>
+                <th class="animetitle"></th>
+                <th class="score"></th>
+                <th class="genres"></th>
+                <th class="type"></th>
+                <th class="episodes"></th>
+                <th class="aired"><span class="season"></span><span> </span><span class="year"></span></th>
+                <th class="studios"></th>
+                <th class="Source"></th>
+                <th class="ranked"></th>
+                <th class="popularity"></th>
+            </tbody>
+        </table>
+        <table class="guessbox">
+            <thead>
+                <th>Anime Title</th>
+                <th>Score</th>
+                <th>Genres</th>
+                <th>Type</th>
+                <th>Episodes</th>
+                <th>Premiered</th>    
+                <th>Studios</th>
+                <th>Source</th>
+                <th>Ranked</th>
+                <th>Popularity</th>
+            </thead>
+            <tbody>
+                <th class="animetitle"></th>
+                <th class="score"></th>
+                <th class="genres"></th>
+                <th class="type"></th>
+                <th class="episodes"></th>
+                <th class="aired"><span class="season"></span><span> </span><span class="year"></span></th>
+                <th class="studios"></th>
+                <th class="Source"></th>
+                <th class="ranked"></th>
+                <th class="popularity"></th>
+            </tbody>
+        </table>
+        <table class="guessbox">
+            <thead>
+                <th>Anime Title</th>
+                <th>Score</th>
+                <th>Genres</th>
+                <th>Type</th>
+                <th>Episodes</th>
+                <th>Premiered</th>
+                <th>Studios</th>
+                <th>Source</th>
+                <th>Ranked</th>
+                <th>Popularity</th>
+            </thead>
+            <tbody>
+                <th class="animetitle"></th>
+                <th class="score"></th>
+                <th class="genres"></th>
+                <th class="type"></th>
+                <th class="episodes"></th>
+                <th class="aired"><span class="season"></span><span> </span><span class="year"></span></th>
+                <th class="studios"></th>
+                <th class="Source"></th>
+                <th class="ranked"></th>
+                <th class="popularity"></th>
+            </tbody>
+        </table>
+        <table class="guessbox">
+            <thead>
+                <th>Anime Title</th>
+                <th>Score</th>
+                <th>Genres</th>
+                <th>Type</th>
+                <th>Episodes</th>
+                <th>Premiered</th>             
+                <th>Studios</th>
+                <th>Source</th>
+                <th>Ranked</th>
+                <th>Popularity</th>
+            </thead>
+            <tbody>
+                <th class="animetitle"></th>
+                <th class="score"></th>
+                <th class="genres"></th>
+                <th class="type"></th>
+                <th class="episodes"></th>
+                <th class="aired"><span class="season"></span><span> </span><span class="year"></span></th>
+                <th class="studios"></th>
+                <th class="Source"></th>
+                <th class="ranked"></th>
+                <th class="popularity"></th>
+            </tbody>
+        </table>
+        <table class="guessbox">
+            <thead>
+                <th>Anime Title</th>
+                <th>Score</th>
+                <th>Genres</th>
+                <th>Type</th>
+                <th>Episodes</th>
+                <th>Premiered</th>            
+                <th>Studios</th>
+                <th>Source</th>
+                <th>Ranked</th>
+                <th>Popularity</th>
+            </thead>
+            <tbody>
+                <th class="animetitle"></th>
+                <th class="score"></th>
+                <th class="genres"></th>
+                <th class="type"></th>
+                <th class="episodes"></th>
+                <th class="aired"><span class="season"></span><span> </span><span class="year"></span></th>
+                <th class="studios"></th>
+                <th class="Source"></th>
+                <th class="ranked"></th>
+                <th class="popularity"></th>
+            </tbody>
+        </table>
+        <table class="guessbox">
+            <thead>
+                <th>Anime Title</th>
+                <th>Score</th>
+                <th>Genres</th>
+                <th>Type</th>
+                <th>Episodes</th>
+                <th>Premiered</th>            
+                <th>Studios</th>
+                <th>Source</th>
+                <th>Ranked</th>
+                <th>Popularity</th>
+            </thead>
+            <tbody>
+                <th class="animetitle"></th>
+                <th class="score"></th>
+                <th class="genres"></th>
+                <th class="type"></th>
+                <th class="episodes"></th>
+                <th class="aired"><span class="season"></span><span> </span><span class="year"></span></th>
+                <th class="studios"></th>
+                <th class="Source"></th>
+                <th class="ranked"></th>
+                <th class="popularity"></th>
+            </tbody>
+        </table>
+        <table class="guessbox">
+            <thead>
+                <th>Anime Title</th>
+                <th>Score</th>
+                <th>Genres</th>
+                <th>Type</th>
+                <th>Episodes</th>
+                <th>Premiered</th>            
+                <th>Studios</th>
+                <th>Source</th>
+                <th>Ranked</th>
+                <th>Popularity</th>
+            </thead>
+            <tbody>
+                <th class="animetitle"></th>
+                <th class="score"></th>
+                <th class="genres"></th>
+                <th class="type"></th>
+                <th class="episodes"></th>
+                <th class="aired"><span class="season"></span><span> </span><span class="year"></span></th>
+                <th class="studios"></th>
+                <th class="Source"></th>
+                <th class="ranked"></th>
+                <th class="popularity"></th>
+            </tbody>
+        </table>
+        <table class="guessbox">
+            <thead>
+                <th>Anime Title</th>
+                <th>Score</th>
+                <th>Genres</th>
+                <th>Type</th>
+                <th>Episodes</th>
+                <th>Premiered</th>             
+                <th>Studios</th>
+                <th>Source</th>
+                <th>Ranked</th>
+                <th>Popularity</th>
+            </thead>
+            <tbody>
+                <th class="animetitle"></th>
+                <th class="score"></th>
+                <th class="genres"></th>
+                <th class="type"></th>
+                <th class="episodes"></th>
+                <th class="aired"><span class="season"></span> <span class="year"></span></th>
+                <th class="studios"></th>
+                <th class="Source"></th>
+                <th class="ranked"></th>
+                <th class="popularity"></th>
+            </tbody>
+        </table>
+    </main>
+    <div id="points">Points:</div>
+    <footer>&copy; 2024 Unlimited Anidle Game by Tumurbaatar Tuguldur</footer>
+    <script src="script.js"></script>
+</body>
+</html>
