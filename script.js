@@ -40,7 +40,7 @@ document.getElementById("submitguess").onclick = function updatecounter(){
       else {
         let mysteryanime = data[randomnumber];
         console.log('Mystery anime is:',mysteryanime.Name);
-        img.src = `Pics/${Number(mysteryanime.Popularity)}.jpg`
+        img.src = `${Number(mysteryanime.Popularity)}.jpg`
         const titles = document.getElementsByClassName("animetitle");
         globalsearchresult[0].English_name == "Unknown" ? titles[16-guesses].textContent = globalsearchresult[0].Name : titles[16-guesses].textContent = globalsearchresult[0].English_name;
         const score = document.getElementsByClassName("score");
