@@ -335,6 +335,46 @@ h4 {
     width: 1300px;
 }
 
+#rule{
+    display: none;
+    right: 0;
+    position: fixed;
+    width: 500px;
+    height: auto;
+    bottom: 90px;
+    padding: 10px;
+    border-radius: 5px;
+    border: #1a1a1d solid 2px;
+    background-color: inherit;
+}
+
+label {
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    width: 200px;
+    height: 50px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #1a76d2;
+    font-size: 35px;
+    background-color: #1a1a1d;
+    font-family:  "Jaro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    padding-left: 5px;
+}
+
+#rule svg{
+    position: fixed;
+    bottom: 51.5px;
+    scale: 0.6;
+    right: 100px;
+    transition: 0s all;
+}
+
 @keyframes gradientmove {
     0% {
         background-position: 0%;
@@ -377,6 +417,9 @@ h4 {
     .container::-webkit-scrollbar {
         height: 4px;
     }
+    #rule {
+        width: 300px;
+    }
 }
 @media screen and (max-width:579px){
     .container {
@@ -401,4 +444,41 @@ h4 {
     .container::-webkit-scrollbar {
         height: 4px;
     }
+    #rule {
+        width: 300px;
+    }
+    label {
+        width: 90px;
+        overflow: hidden;
+    }
+    label::before {
+        content: "Play??";
+    }
 }
+
+#rules{
+    display: none;
+}
+
+#rules:checked + div{
+    display:inline;
+    border: #1262b3 solid 2px;
+}
+#rules:checked ~ label{
+    color: white;
+    background-color: #1262b3;
+}
+
+#rules:checked + div svg:nth-last-child(1){
+    display: inline;
+}
+
+svg:nth-last-child(1){
+    display: none;
+}
+
+
+#rules:hover + div{
+    display:inline;
+}
+
