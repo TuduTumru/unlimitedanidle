@@ -482,3 +482,6 @@ svg:nth-last-child(1){
     display:inline;
 }
 
+#information {
+    display: none;
+}
